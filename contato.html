@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário completo</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="novidades.html">Novidades</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="serviços.html">Serviços</a></li>
+        <li><a href="abu.html">Fotos</a></li>
+      </ul>
+    </nav>
+    <h1 class="titulo-principal">Novidades da Technoova</h1>
+  </header>
+
+<form action="/enviar" method="POST">
+  <fieldset>
+    <legend>Informações Pessoais</legend>
+
+    <label for="nome">Nome Completo:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="site">Tipo de contato</label>
+    <select id="opcoes" name="opcoes">
+      <option value="Contatocomercial">Contato comercial</option>
+      <option value="Elogio">Elogio</option>
+      <option value="Reclamação">Reclamação</option>
+    </select>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXX-XXXX">
+
+    <label for="arquivo">Anexar arquivo:</label>
+    <input type="file" id="arquivo" name="arquivo">
+
+    <label>Já é cliente?</label>
+    <div class="radio-group">
+      <input type="radio" id="Sim" name="cliente" value="Sim" checked>
+      <label for="Sim">Sim</label>
+      <input type="radio" id="Nao" name="cliente" value="Nao">
+      <label for="Nao">Não</label>
+    </div>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+
+    <input type="checkbox" id="termos" required>
+    <label class="termos-label" for="termos">Aceito os termos</label>
+
+    <br>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+  </fieldset>
+</form>
+ <footer>
+    <h2>Nos siga nas redes sociais:</h2>
+    <p>
+      <a href="https://pt-br.facebook.com/">Facebook</a> |
+      <a href="https://www.instagram.com/">Instagram</a> |
+      <a href="https://web.whatsapp.com/">WhatsApp</a>
+    </p>
+  </footer>
+</body>
+</html>

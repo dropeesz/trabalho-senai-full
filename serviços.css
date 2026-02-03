@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+header {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    background-color: #0400ff;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .titulo-principal {
+    font-size: 2em;
+    margin-top: 5px;
+  }
+  
+  
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f8;
+}
+
+nav {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  background-color: #0400ff;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #00aaff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+}
+
+.service {
+  flex: 1 1 30%;
+  background-color: #ffffff;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 1px;
+}
+
+.service h3 {
+  margin-top: 0;
+}
+
+/* Rodapé */
+footer {
+  background-color: #0400ff;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 3em;
+}
+
+footer a {
+  color: #04aaff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  background-color: #7a7a7a;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .service {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+a:hover {
+  background-color: rgba(240, 241, 255, 0.692);
+}
